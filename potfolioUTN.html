@@ -3,39 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Leonardo Ferreiro</title>
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+    
+    <!-- Encabezado -->
     <header>
         <div class="menu">
             <nav>
                 <ul>
                     <li><a href="potfolioUTN.html">Inicio</a></li>
-                    <li><a href="#">Acerca de mi</a></li>
-                    <li><a href="#">Estudios</a></li>
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#acerca-de-mi">Acerca de mi</a></li>
+                    <li><a href="#estudios">Estudios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section>
+
+    <!-- Sección Acerca de Mi -->
+    <section id="acerca-de-mi">
         <h2>Acerca de Mi</h2>
-        <p>Hola! me llamo Leonardo Ferreiro.
+        <p>Hola, me llamo Leonardo Ferreiro. Soy desarrollador web y me especializo en HTML5, CSS3 y JavaScript.
         </p>
     </section>
-    <section>
-        <h2>Proyectos</h2>
-        <p>Estos son los proyectos en los que trabaje y trabajo actualmente.</p>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos">
+        <div class="grid">
+            <article>
+                <img src="proyecto1.jpg" alt="Proyecto 1">
+                <h3>Proyecto 1</h3>
+                <p>Descripción breve del proyecto.</p>
+            </article>
+            <article>
+                <img src="proyecto2.jpg" alt="Proyecto 2">
+                <h3>Proyecto 2</h3>
+                <p>Descripción breve del proyecto.</p>
+            </article>
+        </div>
     </section>
-    <section>
+
+    <!-- Sección Estudios -->
+    <section id="estudios">
         <h2>Estudios</h2>
         <p>Carrera de grado: Ing. en informatica(En curso) en la Universidad de Avellaneda.</p>
         <p>Curso de programacion web FullStack(En curso) en la UTN.</p>
     </section>
-    <section>
-        <h2>Contacto</h2>
-        <p>leoferreiro1@gmail.com</p>
+
+    <!-- Sección Contacto -->
+    <section id="contacto">
+        <form>
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu email" required>
+            <textarea placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
     </section>
+
+    <!-- Pie de pagina -->
+     <footer>
+        <p>&copy; 2025 Leonardo Ferreiro. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
