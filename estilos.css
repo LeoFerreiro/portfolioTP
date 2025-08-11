@@ -35,7 +35,8 @@ header {
 }
 
 .logo {
-    color: #fff;
+    color:#f9f9f9;
+    mix-blend-mode: difference;
 }
 
 .navbar {
@@ -55,13 +56,14 @@ header {
 }
 
 .nav-links a {
-    color: #fff;
+    color:#f9f9f9;
+    mix-blend-mode: difference;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #ffd700;
+    color: #32d8a1;
 }
 
 /* Botón de tema */
