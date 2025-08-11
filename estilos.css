@@ -1,44 +1,86 @@
+/* --------- Variables --------- */
+:root {
+    --bg-color: #f9f9f9;
+    --text-color: #333;
+    --primary-color: #222;
+    --card-bg: #fff;
+}
+
+body.dark {
+    --bg-color: #1e1e1e;
+    --text-color: #f1f1f1;
+    --primary-color: #f1f1f1;
+    --card-bg: #2a2a2a;
+}
+
+/* --------- Reset --------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body {
     font-family: Arial, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
     line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
 }
 
-/* Navegación */
+/* --------- Navbar --------- */
 header {
-    background: #222;
-    color: #fff;
+    background: var(--primary-color);
     padding: 1rem 2rem;
 }
 
-nav {
+.logo {
+    color: #fff;
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav ul {
+.nav-links {
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
-nav ul li {
+.nav-links li {
     margin-left: 1.5rem;
 }
 
-nav ul li a {
+.nav-links a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
-/* Secciones */
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+/* Botón de tema */
+.theme-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Menú hamburguesa (móvil) */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* --------- Secciones --------- */
 section {
     padding: 2rem;
     max-width: 1000px;
@@ -47,10 +89,10 @@ section {
 
 h2 {
     margin-bottom: 1rem;
-    color: #444;
+    color: var(--primary-color);
 }
 
-/* Proyectos */
+/* --------- Grid Proyectos --------- */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -58,11 +100,16 @@ h2 {
 }
 
 .grid article {
-    background: #fff;
+    background: var(--card-bg);
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     text-align: center;
+    transition: transform 0.3s;
+}
+
+.grid article:hover {
+    transform: scale(1.05);
 }
 
 .grid img {
@@ -70,7 +117,7 @@ h2 {
     border-radius: 8px;
 }
 
-/* Formulario */
+/* --------- Formulario --------- */
 form {
     display: flex;
     flex-direction: column;
@@ -81,24 +128,46 @@ form input, form textarea, form button {
     padding: 0.8rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background: var(--card-bg);
+    color: var(--text-color);
 }
 
 form button {
-    background: #222;
+    background: var(--primary-color);
     color: #fff;
     border: none;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
 form button:hover {
-    background: #555;
+    background: #444;
 }
 
-/* Footer */
+/* --------- Footer --------- */
 footer {
     text-align: center;
     padding: 1rem;
-    background: #222;
+    background: var(--primary-color);
     color: #fff;
     margin-top: 2rem;
+}
+
+/* --------- Responsive --------- */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: var(--primary-color);
+        flex-direction: column;
+        width: 200px;
+        display: none;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
 }
