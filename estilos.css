@@ -119,6 +119,38 @@ h2 {
     border-radius: 8px;
 }
 
+/* --------- Sección Acerca de mi --------- */
+.acerca-de-mi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.acerca-de-mi-txt {
+    flex: 1;
+}
+
+.acerca-de-mi-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.acerca-de-mi-img img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.acerca-de-mi-img img:hover {
+    transform: scale(1.05);
+}
+
 /* --------- Formulario --------- */
 form {
     display: flex;
@@ -171,5 +203,12 @@ footer {
     }
     .menu-toggle {
         display: block;
+    }
+    .acerca-de-mi {
+        flex-direction: column;
+        text-align: center;
+    }
+    .acerca-de-mi-img {
+        max-width: 200px;
     }
 }
