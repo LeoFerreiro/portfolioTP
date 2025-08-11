@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     
@@ -22,7 +23,7 @@
                 <ul class="nav-links" id="nav-links">
                     <li><a href="potfolioUTN.html">Inicio</a></li>
                     <li><a href="#acerca-de-mi">Acerca de mi</a></li>
-                    <li><a href="#estudios">Estudios</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#proyectos">Proyectos</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                     <li><button id="theme-toggle" class="theme-btn">🌙</button></li>
@@ -36,6 +37,9 @@
             <h2>Acerca de Mi</h2>
             <p>Hola, me llamo Leonardo Ferreiro. Soy desarrollador web y me especializo en HTML5, CSS3 y JavaScript.
             </p>
+            <h4>Estudios</h4>
+                <p>Carrera de grado: Ing. en informatica en la Universidad de Avellaneda.</p>
+                <p>Curso de programacion web FullStack en la UTN.</p>
         </div>
         <div class="acerca-de-mi-img">
             <img src="mi-foto.jpg" alt="Foto de Leonardo Ferreiro">
@@ -47,24 +51,39 @@
         <h2>Proyectos</h2>
         <div class="grid">
             <article>
-                <img src="proyecto1.jpg" alt="Proyecto 1">
-                <h3>Proyecto 1</h3>
-                <p>Descripción breve del proyecto.</p>
+                <img src="ecommerce.jpg" alt="Proyecto 1">
+                <h3>E-Commerce</h3>
+                <p>Tienda online de electrodomesticos con sistema de envios.</p>
             </article>
             <article>
-                <img src="proyecto2.jpg" alt="Proyecto 2">
-                <h3>Proyecto 2</h3>
-                <p>Descripción breve del proyecto.</p>
+                <img src="bloglibros.webp" alt="Proyecto 2">
+                <h3>Blog</h3>
+                <p>Blog de reseñas de libros.</p>
             </article>
         </div>
     </section>
 
-    <!-- Sección Estudios -->
-    <section id="estudios" class="fade-in">
-        <h2>Estudios</h2>
-        <p>Carrera de grado: Ing. en informatica(En curso) en la Universidad de Avellaneda.</p>
-        <p>Curso de programacion web FullStack(En curso) en la UTN.</p>
-    </section>
+    <!-- Sección Servicios -->
+    <section id="servicios" class="fade-in">
+    <h2>Servicios</h2>
+    <div class="servicios-grid">
+        <div class="servicio">
+            <i class="fas fa-code"></i>
+            <h3>Desarrollo Web</h3>
+            <p>Creación de sitios web modernos, rápidos y optimizados con HTML, CSS y JavaScript.</p>
+        </div>
+        <div class="servicio">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Diseño Responsive</h3>
+            <p>Adaptación de tu web para que luzca perfecta en móviles, tablets y computadoras.</p>
+        </div>
+        <div class="servicio">
+            <i class="fas fa-search"></i>
+            <h3>SEO Básico</h3>
+            <p>Optimización para mejorar el posicionamiento de tu página en buscadores.</p>
+        </div>
+    </div>
+</section>
 
     <!-- Sección Contacto -->
     <section id="contacto" class="fade-in">
@@ -82,6 +101,5 @@
         <p>&copy; 2025 Leonardo Ferreiro. Todos los derechos reservados.</p>
     </footer>
     <script src="script.js"></script>
-
 </body>
 </html>

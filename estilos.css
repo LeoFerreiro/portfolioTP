@@ -93,6 +93,9 @@ h2 {
     margin-bottom: 1rem;
     color: var(--primary-color);
 }
+h4 {
+    color: var(--primary-color);
+}
 
 /* --------- Grid Proyectos --------- */
 .grid {
@@ -176,6 +179,48 @@ form button {
 
 form button:hover {
     background: #444;
+}
+
+/* --------- Servicios --------- */
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.servicio {
+    background: var(--card-bg);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.servicio:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.servicio i {
+    font-size: 2.5rem;
+    color: #ffd700;
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+}
+
+.servicio:hover i {
+    transform: scale(1.2);
+}
+
+.servicio h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.servicio p {
+    font-size: 0.95rem;
 }
 
 /* --------- Footer --------- */
