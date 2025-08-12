@@ -23,8 +23,8 @@
                 <ul class="nav-links" id="nav-links">
                     <li><a href="potfolioUTN.html">Inicio</a></li>
                     <li><a href="#acerca-de-mi">Acerca de mi</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                     <li><button id="theme-toggle" class="theme-btn">🌙</button></li>
                 </ul>
@@ -42,7 +42,7 @@
                 <p>Curso de programacion web FullStack en la UTN.</p>
         </div>
         <div class="acerca-de-mi-img">
-            <img src="mi-foto.jpg" alt="Foto de Leonardo Ferreiro">
+            <img src="leo-rem.png" alt="Foto de Leonardo Ferreiro">
         </div>
     </section>
 
@@ -87,14 +87,16 @@
 
     <!-- Sección Contacto -->
     <section id="contacto" class="fade-in">
-        <h2>Contacto</h2>
-        <form>
-            <input type="text" placeholder="Tu nombre" required>
-            <input type="email" placeholder="Tu email" required>
-            <textarea placeholder="Tu mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+    <h2>Contacto</h2>
+    <form id="contact-form">
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu email" required>
+        <textarea placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+    <!-- Mensaje de confirmación -->
+    <p id="form-message" class="form-message"></p>
+</section>
 
     <!-- Pie de pagina -->
      <footer>

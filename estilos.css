@@ -171,7 +171,7 @@ form input, form textarea, form button {
 
 form button {
     background: var(--primary-color);
-    color: #fff;
+    color: #ffffff;
     border: none;
     cursor: pointer;
     transition: background 0.3s;
@@ -179,6 +179,21 @@ form button {
 
 form button:hover {
     background: #444;
+}
+
+.form-message {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    display: none; /* Oculto por defecto */
+}
+
+.form-message.success {
+    color: green;
+}
+
+.form-message.error {
+    color: red;
 }
 
 /* --------- Servicios --------- */
@@ -228,7 +243,7 @@ footer {
     text-align: center;
     padding: 1rem;
     background: var(--primary-color);
-    color: #fff;
+    color:#f1f1f1;
     margin-top: 2rem;
 }
 

@@ -30,3 +30,25 @@ const observer = new IntersectionObserver((entradas, obs) => {
 secciones.forEach(seccion => {
     observer.observe(seccion);
 });
+
+// Mensaje de confirmación del formulario
+const form = document.getElementById("contact-form");
+const formMessage = document.getElementById("form-message");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault(); // Evita recargar la página
+
+    // Aquí podrías hacer un envío real con fetch() o similar
+    // Simulación de envío exitoso
+    formMessage.textContent = "✅ Tu mensaje se envió con éxito.";
+    formMessage.className = "form-message success";
+    formMessage.style.display = "block";
+
+    // Limpiar campos
+    form.reset();
+
+    // Ocultar mensaje después de 5 segundos
+    setTimeout(() => {
+        formMessage.style.display = "none";
+    }, 5000);
+});
