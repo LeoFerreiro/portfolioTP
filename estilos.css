@@ -4,6 +4,10 @@
     --text-color: #333;
     --primary-color: #222;
     --card-bg: #fff;
+    --button-bg: #222;
+    --button-text: #fff;
+    --footer-bg: #222;
+    --footer-text: #fff;
 }
 
 body.dark {
@@ -11,6 +15,10 @@ body.dark {
     --text-color: #f1f1f1;
     --primary-color: #f1f1f1;
     --card-bg: #2a2a2a;
+    --button-bg: #f1f1f1;
+    --button-text: #1e1e1e;
+    --footer-bg: #fff;
+    --footer-text: #000;
 }
 
 /* --------- Reset --------- */
@@ -170,22 +178,23 @@ form input, form textarea, form button {
 }
 
 form button {
-    background: var(--primary-color);
-    color: #ffffff;
+    background: var(--button-bg);
+    color: var(--button-text);
     border: none;
+    padding: 0.8rem;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s, color 0.3s;
 }
 
 form button:hover {
-    background: #444;
+    background: #555;
 }
 
 .form-message {
     margin-top: 1rem;
     font-size: 1rem;
     font-weight: bold;
-    display: none; /* Oculto por defecto */
+    display: none;
 }
 
 .form-message.success {
@@ -242,9 +251,10 @@ form button:hover {
 footer {
     text-align: center;
     padding: 1rem;
-    background: var(--primary-color);
-    color:#f1f1f1;
+    background: var(--footer-bg);
+    color: var(--footer-text);
     margin-top: 2rem;
+    transition: background 0.3s, color 0.3s;
 }
 
 /* Estado inicial: invisible y desplazado */
