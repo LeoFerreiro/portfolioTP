@@ -38,7 +38,6 @@ const formMessage = document.getElementById("form-message");
 form.addEventListener("submit", function(e) {
     e.preventDefault(); // Evita recargar la página
 
-    // Aquí podrías hacer un envío real con fetch() o similar
     // Simulación de envío exitoso
     formMessage.textContent = "✅ Tu mensaje se envió con éxito.";
     formMessage.className = "form-message success";
